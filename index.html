@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>First Assignment</title>
+  <meta name="description" content="First Assignment for Ellity."/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap" id="main">
+    <section class="card" aria-labelledby="selector-title">
+      <div class="list" role="group" aria-labelledby="selector-title">
+        <div class="item">
+          <div class="label-text">All pages</div>
+          <label class="checkbox" aria-hidden="true">
+            <input type="checkbox" id="select-all" aria-label="Select all pages">
+            <span class="checkmark" aria-hidden="true"></span>
+          </label>
+        </div>
+
+        <hr class="divider" aria-hidden="true">
+
+        <label class="item" for="page-1">
+          <div class="label-text">Page 1</div>
+          <div class="checkbox">
+            <input id="page-1" data-index="1" class="page-checkbox" type="checkbox" name="pages" value="1" aria-label="Page 1">
+            <span class="checkmark" aria-hidden="true"></span>
+          </div>
+        </label>
+
+        <label class="item" for="page-2">
+          <div class="label-text">Page 2</div>
+          <div class="checkbox">
+            <input id="page-2" data-index="2" class="page-checkbox" type="checkbox" name="pages" value="2" aria-label="Page 2">
+            <span class="checkmark" aria-hidden="true"></span>
+          </div>
+        </label>
+
+        <label class="item" for="page-3">
+          <div class="label-text">Page 3</div>
+          <div class="checkbox">
+            <input id="page-3" data-index="3" class="page-checkbox" type="checkbox" name="pages" value="3" aria-label="Page 3">
+            <span class="checkmark" aria-hidden="true"></span>
+          </div>
+        </label>
+
+        <label class="item" for="page-4">
+          <div class="label-text">Page 4</div>
+          <div class="checkbox">
+            <input id="page-4" data-index="4" class="page-checkbox" type="checkbox" name="pages" value="4" aria-label="Page 4">
+            <span class="checkmark" aria-hidden="true"></span>
+          </div>
+        </label>
+      </div>
+
+      <hr class="divider" aria-hidden="true">
+
+      <div class="actions">
+        <button class="done-btn" id="done" type="button" disabled>Done</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
